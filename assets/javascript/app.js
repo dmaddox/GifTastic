@@ -1,6 +1,6 @@
 
 // Setup an array of various Rick & Morty characters, leaving some obvious ones out so that users can add them (e.g.: Rick Sanchez, Morty Smith)
-charactersArray = ["Jerry Smith", "Pickle Rick", "Mr. Meeseeks", "Krombopulos Michael", "Mr. Poopybutthole", "Ants-In-My-Eyes Johnson" ];
+topics = ["Jerry Smith", "Pickle Rick", "Mr. Meeseeks", "Krombopulos Michael", "Mr. Poopybutthole", "Ants-In-My-Eyes Johnson" ];
 
 //setup variables
 var gifURL;
@@ -17,11 +17,11 @@ renderButtons()
 // Render buttons 
 function renderButtons() {
 	btnSection.empty();
-	// Build a button for each item in charactersArray
-	for (i = 0; i < charactersArray.length; i++){
-		var button = $("<button>").val(charactersArray[i]);
+	// Build a button for each item in topics
+	for (i = 0; i < topics.length; i++){
+		var button = $("<button>").val(topics[i]);
 		button.addClass("button");
-		button.text(charactersArray[i]);
+		button.text(topics[i]);
 		btnSection.append(button);
 	};
 };
@@ -99,10 +99,10 @@ $(document).on("click", ".gif", function() {
 $("#add").on("click", function() {
 	// prevent submit button from refreshing page
 	event.preventDefault();
-	// push the #new-name input's value to the charactersArray[]
+	// push the #new-name input's value to the topics[]
 	var newName = $("#new-name").val();
-	charactersArray.push(newName);
-	console.log(charactersArray[charactersArray.length - 1]);
+	topics.push(newName);
+	console.log(topics[topics.length - 1]);
 	renderButtons();
 	$("#new-name").val('');
 })

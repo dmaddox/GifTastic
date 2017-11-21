@@ -1,0 +1,84 @@
+body {
+	background-image: url("../images/bg.jpg");
+	background-size: cover;
+	background-color: orange;
+	background-attachment: fixed;
+	overflow-y: scroll;
+	width: 100%;
+}
+#wrapper {
+	margin: auto;
+	width: 100%;
+	overflow:auto;
+}
+h1 {
+	font-size: 36px;
+	font-weight: bold;
+	color: purple;
+	margin: 25px auto;
+}
+#title {
+	max-width: 960px;
+	text-align: center;
+}
+section {
+	display:block;
+	overflow:auto;
+	margin: 25px auto;
+	text-align: center;
+		overflow:auto;
+}
+#btnSection {
+	max-width: 960px;
+	text-align: center;
+	margin: auto;
+}
+.gif {
+	float:left;
+	margin-right: 25px;
+	margin-top: 15px;
+}
+.gif img {
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	border: 2px #fff;
+}
+p {
+	color: purple;
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+.button {
+	margin-right: 15px;
+	margin-bottom: 15px;
+	background-color: #555555;
+    border: none;
+    border-radius: 2px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+form {
+	text-align: center;
+}
+#add {
+	margin-left: 15px;
+	background-color: #fff;
+	border: 2px solid grey;
+    border-radius: 2px;
+    padding: 4px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+#new-name {
+	text-align: center;
+	    padding: 4px 15px;
+	    font-size: 16px;
+	    font-weight: lighter;
+	    font-style: italic;
+}

@@ -5,6 +5,7 @@ body {
 	background-attachment: fixed;
 	overflow-y: scroll;
 	width: 100%;
+	font-family: 'Lato', sans-serif;
 }
 #wrapper {
 	margin: auto;
@@ -15,7 +16,9 @@ h1 {
 	font-size: 36px;
 	font-weight: bold;
 	color: purple;
-	margin: 25px auto;
+	margin: 48px auto;
+	text-shadow: 1px 1px lavender;
+	font-family: 'Dhurjati', sans-serif;
 }
 #title {
 	max-width: 960px;
@@ -33,10 +36,15 @@ section {
 	text-align: center;
 	margin: auto;
 }
+#gifSection {
+	text-align: center;
+	padding-left: 25px;
+}
 .gif {
 	float:left;
 	margin-right: 25px;
 	margin-top: 15px;
+	cursor: pointer;
 }
 .gif img {
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -45,7 +53,11 @@ section {
 p {
 	color: purple;
 	font-weight: bold;
-	padding-bottom: 10px;
+	padding-top: 10px;
+	text-shadow: 1px 1px #9370DB;
+}
+button {
+		cursor: pointer;
 }
 .button {
 	margin-right: 15px;
@@ -81,4 +93,5 @@ form {
 	    font-size: 16px;
 	    font-weight: lighter;
 	    font-style: italic;
+	    width: 400px;
 }

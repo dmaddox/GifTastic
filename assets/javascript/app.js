@@ -77,7 +77,7 @@ function displayGif() {
 			newDiv.append(img);
 			var p = $("<p>");
 			p.text("Rating: ");
-			newDiv.prepend(p);
+			newDiv.append(p);
 			p.append(rating.toUpperCase());
 			$("#gifSection").append(newDiv);
 		}
